@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const LeftNav = () => {
 	const [categories, setCategories] = useState([]);
 	useEffect(() => {
-		fetch('http://localhost:5000/categories')
+		fetch('https://the-dragon-news-server-gsjoy24.vercel.app/categories')
 			.then((res) => res.json())
 			.then((data) => {
 				setCategories(data);
@@ -15,7 +15,7 @@ const LeftNav = () => {
 	}, []);
 
 	return (
-		<div style={{top:'50px'}} className='position-sticky start-0'>
+		<div style={{ top: '50px',margin:'30px 0' }} className='position-sticky start-0'>
 			<h4>All Categories</h4>
 			<div className='ps-3'>
 				{categories.map((category) => (

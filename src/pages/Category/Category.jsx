@@ -9,7 +9,7 @@ const Category = () => {
 			{categoryData.length !== 0 ? (
 				categoryData.map((news) => <NewsCard key={news._id} news={news}></NewsCard>)
 			) : (
-				<h2 className='px-1 text-center'>Sorry! No NEWS for this category.</h2>
+				<h2 className='px-1 text-center my-5'>Sorry! No NEWS for this category.</h2>
 			)}
 		</div>
 	);

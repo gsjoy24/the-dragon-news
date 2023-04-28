@@ -46,14 +46,8 @@ const NavigationBar = () => {
 							)}
 						</Nav>
 						<Nav className='d-flex gap-3 align-items-center'>
-							<Link to='/'>{user && <FaUserCircle style={{ fontSize: '30px' }} className='w-100' />}</Link>
-
 							{user && (
-								<img
-									style={{ width: '40px', borderRadius:'100%' }}
-									src={user?.photoURL}
-									alt={user?.displayName}
-								/>
+								<img style={{ width: '40px', borderRadius: '100%' }} src={user?.photoURL} alt={user?.displayName} />
 							)}
 
 							{user ? (
