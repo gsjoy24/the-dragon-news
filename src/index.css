@@ -1,0 +1,7 @@
+* {
+	transition: 200ms ease-out;
+	-webkit-transition: 200ms ease-out;
+	-moz-transition: 200ms ease-out;
+	-ms-transition: 200ms ease-out;
+	-o-transition: 200ms ease-out;
+}

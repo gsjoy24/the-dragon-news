@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const LeftNav = () => {
@@ -16,7 +15,7 @@ const LeftNav = () => {
 	}, []);
 
 	return (
-		<div>
+		<div style={{top:'50px'}} className='position-sticky start-0'>
 			<h4>All Categories</h4>
 			<div className='ps-3'>
 				{categories.map((category) => (
